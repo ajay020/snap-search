@@ -40,9 +40,9 @@ const Header = () => {
         </div>
       </form>
       <div className="row bg-primary">
-        <Link to="/river" className="btn col-auto">River</Link>
-        <Link to="/landscape" className="btn col-auto">Landscape</Link>
-        <Link to="/bird" className="btn col-auto">Bird</Link>
+        <Link to="river" className="btn col-auto">River</Link>
+        <Link to="landscape" className="btn col-auto">Landscape</Link>
+        <Link to="bird" className="btn col-auto">Bird</Link>
       </div>
     </div>
   );
