@@ -13,7 +13,7 @@ const Gallery = () => {
 
     return ( <div className="container">
         {
-             images?.length == 0 ?
+             images?.length === 0 ?
              <h1>No image found, try another words</h1> :
              (<div className="row g-2 mb-5 justify-content-center">
                 { images?.map( (img:any ) => <Item key={img?.id} data={img} />)}    

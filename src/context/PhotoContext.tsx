@@ -26,7 +26,7 @@ const PhotoContextProvider = (props:any) => {
     return (
          <PhotoContext.Provider value={{images, loading, runSearch}}>
             {props.children}
-        </PhotoContext.Provider> );
+        </PhotoContext.Provider>);
 }
  
 export default PhotoContextProvider;

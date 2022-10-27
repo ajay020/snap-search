@@ -43,13 +43,16 @@ const Header = () => {
         </div>
       </form>
       <div className="header__links row mb-2 g-2 mt-5 justify-content-center">
-        <Link to="river" className="btn   btn-outline-primary  col-sm-auto ">
-          River
+        <Link to="river" className="btn btn-outline-primary  col-sm-auto ">
+          Mountain
         </Link>
-        <Link to="landscape" className="btn  btn-outline-primary mx-2 col-sm-auto">
+        <Link
+          to="landscape"
+          className="btn btn-outline-primary mx-2 col-sm-auto"
+        >
           Landscape
         </Link>
-        <Link to="bird" className="btn btn-outline-primary  col-sm-auto">
+        <Link to="bird" className="btn btn-outline-primary col-sm-auto">
           Bird
         </Link>
       </div>
