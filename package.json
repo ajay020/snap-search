@@ -1,8 +1,8 @@
 {
   "name": "search_shot",
   "version": "0.1.0",
-  "homepage":"https://github.com/ajay020/snap-search.git",
   "private": true,
+  "homepage":"https://ajay020.github.io/snap-search",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
