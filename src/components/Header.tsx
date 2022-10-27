@@ -24,9 +24,9 @@ const Header = () => {
   }
 
   return (
-    <div className="container bg-dark">
-      <form className="row  p-5 justify-content-center" onSubmit={handleSubmit}>
-        <div className="col-auto bg-primary">
+    <div className="container border w-50 my-4">
+      <form className="row g-2 p-5 justify-content-center" onSubmit={handleSubmit}>
+        <div className="col-auto bg-secondary">
           <input
             type="text"
             onChange={(e) => changeHandler(e)}
@@ -35,14 +35,14 @@ const Header = () => {
             placeholder="Search pohotos"
           />
         </div>
-        <div className="col-auto bg-secondary">
+        <div className="col-auto">
           <button className="btn btn-outline-primary">Search</button>
         </div>
       </form>
-      <div className="row bg-primary">
-        <Link to="river" className="btn col-auto">River</Link>
-        <Link to="landscape" className="btn col-auto">Landscape</Link>
-        <Link to="bird" className="btn col-auto">Bird</Link>
+      <div className="row mb-2  justify-content-center">
+        <Link to="river" className="btn   btn-outline-primary  col-auto">River</Link>
+        <Link to="landscape" className="btn  btn-outline-primary mx-2 col-auto">Landscape</Link>
+        <Link to="bird" className="btn btn-outline-primary  col-auto">Bird</Link>
       </div>
     </div>
   );

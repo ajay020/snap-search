@@ -8,8 +8,8 @@ const Item = ({data}: any) => {
 
     let url = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_m.jpg`;
 
-    return ( <div className="border" style={{width: "200px", height: "200px"}}>
-        <img src={url} alt="" className="img-fluid w-100"  />
+    return ( <div className=" col-xs-12 col-sm-4 col-md-4 col-lg-2">
+        <img src={url} alt="" className="p-0" style={{width:"100%", height:"100%",}}  />
     </div> );
 }
  
