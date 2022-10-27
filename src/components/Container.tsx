@@ -5,14 +5,16 @@ import Header from "./Header";
 import { useContext } from 'react';
 import { PhotoContext } from './../context/PhotoContext';
 import { useEffect } from 'react';
+import Loader from "./Loader";
 
 type PropType = {
-    runSearch?: any
+    runSearch?: any,
+    loading?:boolean 
 }
 
 const Container = () => {
   const params = useParams();
-  const {runSearch}   = useContext<PropType>(PhotoContext);
+  const {runSearch, loading}   = useContext<PropType>(PhotoContext);
 
   useEffect(() =>{
     if(params.searchQuery){
@@ -24,7 +26,8 @@ const Container = () => {
     return ( 
         <div>
             <Header/>
-            <Gallery/>
+            { loading? <Loader/> : <Gallery/>}
+            
         </div>);
 }
  
